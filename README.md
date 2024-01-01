@@ -1,2 +1,2 @@
 # wq-be
-wq backend app
+A backend server for WordQuiz app.
