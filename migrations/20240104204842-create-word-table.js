@@ -7,13 +7,16 @@ module.exports = {
 		  primaryKey: true,
 		  autoIncrement: true,
 		},
-		english_word: {
+		word: {
 		  type: Sequelize.STRING,
 		  allowNull: false,
-		  unique: true,
 		},
-		explanation: {
+		definition: {
 		  type: Sequelize.TEXT,
+		},
+		startswith: {
+			type: Sequelize.STRING,
+			allowNull: false,
 		},
 		spanish_translation: {
 		  type: Sequelize.STRING,
@@ -32,11 +35,7 @@ module.exports = {
 		},
 		level: {
 		  type: Sequelize.INTEGER,
-		  allowNull: false,
-		},
-		startswith: {
-		  type: Sequelize.STRING,
-		  allowNull: false,
+		  allowNull: true,
 		},
 		created_at: {
 		  type: Sequelize.DATE,
