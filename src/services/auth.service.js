@@ -1,6 +1,6 @@
 const { checkPassword } = require('../utils/passHelper');
 const TokenHelper = require('../utils/tokenGenerator');
-const { getUserByIdentifier } = require('../services/user.service');
+const { getUserByIdentifier } = require('./user.service');
 
 async function login(identifier, password) {
 
